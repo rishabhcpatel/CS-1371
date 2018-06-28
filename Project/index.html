@@ -1,0 +1,123 @@
+<html>
+<head>
+
+  <link rel="icon" type="image/ico" href="ic.ico">
+
+  <style>
+  
+.button {
+    background-color: #0099ff;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+}
+
+.button1:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.button2:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+.button3:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+</style>
+
+  <link href="style.css" rel = "stylesheet" type = "text/css">
+  <script src = "script.js" type="text/javascript"></script>
+<title>Grade Calc</title>
+</head>
+<h1 align = center> FINAL GRADE CALCULATOR</h1>
+<body>
+
+  <table align="center">
+
+    <!-- row 1 -->
+    <tr>
+      <td>Category</td>
+      <td>Weight</td>
+      <td>Score</td>
+    </tr>
+    <!-- 1.TESTS -->
+    <tr>
+      <td>Tests</td>
+      <td><input type = "text" placeholder="Enter Value" id = "test_per" />%</td>
+      <td><input type = "text" placeholder="Enter Value" id = "test_score"/></td>
+    </tr>
+    <!-- 2.HOMEWORK -->
+    <tr>
+      <td>Homework</td>
+      <td><input type = "text" placeholder="Enter Value" id = "homework_per"/>%</td>
+      <td><input type = "text" placeholder="Enter Value" id = "homework_score"/></td>
+    </tr>
+    <!-- 3.QUIZ -->
+    <tr>
+      <td>Quiz</td>
+      <td><input type = "text" placeholder="Enter Value" id = "quiz_per"/>%</td>
+      <td><input type = "text" placeholder="Enter Value" id = "quiz_score"/></td>
+    </tr>
+    <!-- 4.CLASS PARTICIPATION -->
+    <tr>
+      <td>Class Participation</td>
+      <td><input type = "text" placeholder="Enter Value" id = "classPar_per"/>%</td>
+      <td><input type = "text" placeholder="Enter Value" id = "classPar_score"/></td>
+    </tr>
+    <!-- 5.EXTRA CREDIT -->
+    <tr>
+      <td>Extra Credit</td>
+      <td></td>
+      <td><input type = "text" placeholder="Enter Value" id = "extraCredit_score"/></td>
+    </tr>
+    <!-- 6.FINAL EXAM-->
+    <tr>
+      <td>Final Exam</td>
+      <td><input type = "text" placeholder="Enter Value" id = "finalExam_per"/>%</td>
+      <td></td>
+    </tr>
+
+    <!-- SENTENCE
+    <tr align="center">
+      <td colspan = 3>Enter your desired grade<input type = "text" id = "want_score"/>in this class</td>
+    </tr> -->
+    <tr align="left">
+      <td colspan = 3>Select your desired grade or enter your desired numeric grade in the class<input type = "text" placeholder="Enter Value" id = "want_score"/></td>
+    </tr>
+<tr align="left">
+<form>
+  <td>
+  <input type="radio" name="grade" value="A" id ="radA"> A ( = 90)<br>
+  <input type="radio" name="grade" value="B" id ="radB"> B ( = 80)<br>
+  <input type="radio" name="grade" value="C" id ="radC"> C ( = 70)<br>
+  <input type="radio" name="grade" value="D" id ="radD"> D ( = 60)<br>
+  <input type="radio" name="grade" value="F" id ="radF"> F (< 60 i.e. = 59)<br>
+</td>
+</form>
+</tr>
+    <!-- CALCULATE AND RESET-->
+    <tr align="center">
+      <td><button type="submit" value="submit" class = "button button1" onclick="clearSelection()" id = "clearSelection">Clear Selection</button></td>
+      <td><button type="submit" value="submit" class = "button button2" onclick="calculate()">Calculate</button></td>
+      <td><button type="submit" value="submit" class = "button button3" onclick="reset()">Reset</button></td>
+    </tr>
+    <!-- OUTPUT-->
+    <tr align="center">
+      <td colspan = 3>You need to make a <input type ="text" id ="output_score" readonly />in this class for your desired grade</td>
+    </tr>
+
+
+  </table>
+</body>
+<footer align = "center">
+  <p>CS 1371 PROJECT BY RISHABH C. PATEL</p>
+</footer>
+</html>
